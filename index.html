@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>杭州萧山技师学院 AI 学术专用网站</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['-apple-system', 'BlinkMacSystemFont', '"PingFang SC"', '"Microsoft YaHei"', '"Segoe UI"', 'Roboto', 'sans-serif'],
+            },
+            colors: {
+              glass: {
+                100: 'rgba(255, 255, 255, 0.15)',
+                200: 'rgba(255, 255, 255, 0.25)',
+                300: 'rgba(255, 255, 255, 0.35)',
+                400: 'rgba(255, 255, 255, 0.45)',
+                border: 'rgba(255, 255, 255, 0.6)',
+              }
+            },
+            backdropBlur: {
+              xs: '2px',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #eef2f6;
+        /* Mesh Gradient Background for "Liquid Glass" feel */
+        background-image: 
+          radial-gradient(at 0% 0%, hsla(210, 80%, 90%, 1) 0px, transparent 50%),
+          radial-gradient(at 100% 0%, hsla(260, 80%, 90%, 1) 0px, transparent 50%),
+          radial-gradient(at 100% 100%, hsla(180, 80%, 90%, 1) 0px, transparent 50%),
+          radial-gradient(at 0% 100%, hsla(300, 80%, 90%, 1) 0px, transparent 50%);
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 100vh;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(156, 163, 175, 0.5);
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(107, 114, 128, 0.8);
+      }
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.65);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+</head>
+  <body class="antialiased text-slate-800">
+    <div id="root"></div>
+  </body>
+</html>
